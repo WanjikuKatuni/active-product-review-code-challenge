@@ -5,16 +5,19 @@ Product.destroy_all
 User.destroy_all
 
 puts "Creating users..."
-user1 = User.create(name: Faker::Name.name)
-user2 = User.create(name: Faker::Name.name)
-user3 = User.create(name: Faker::Name.name)
+user1 = User.create(name: 'Mutoria Wanyaga')
+user2 = User.create(name: 'Wathuti Muthoni')
+user3 = User.create(name: 'Thayu Maina')
+user4 = User.create(name: 'Wachania Wanyaga')
+user5 = User.create(name: 'Wanjiku Mwangi')
+
 
 puts "Creating products..."
-product1 = Product.create(name: "Stapler", price: 10)
-product2 = Product.create(name: "Whiteboard", price: 15)
-product3 = Product.create(name: "Dry Erase Markers", price: 5)
-product4 = Product.create(name: "Ballpoint Pens", price: 2)
-product5 = Product.create(name: "Scotch Tape", price: 3)
+p1 = Product.create(name: "Stapler", price: 10)
+p2 = Product.create(name: "Whiteboard", price: 15)
+p3 = Product.create(name: "Dry Erase Markers", price: 5)
+p4 = Product.create(name: "Ballpoint Pens", price: 2)
+p5 = Product.create(name: "Scotch Tape", price: 3)
 
 puts "Creating reviews..."
 # *****************************************************************
